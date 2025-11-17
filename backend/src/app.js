@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 // Load environment variables FIRST before any other imports
 dotenv.config();
 
-console.log('🔑 Environment loaded - OpenAI Key:', process.env.OPENAI_API_KEY ? 'Present ✅' : 'Missing ❌');
+console.log('🔑 Environment loaded successfully');
 
 import express from 'express';
 import { createServer } from 'http';
