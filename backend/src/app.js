@@ -73,10 +73,8 @@ const initializeConnections = async () => {
   }
 };
 
-// Initialize on startup
-if (process.env.NODE_ENV !== 'production') {
-  initializeConnections();
-}
+// Note: initializeConnections() is called by server.js for local dev
+// and by api/index.js for Vercel production
 
 // Export for Vercel
 export default app;
